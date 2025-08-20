@@ -200,6 +200,7 @@
     ::-moz-placeholder { color: #b0b8c1; }
     :-ms-input-placeholder { color: #b0b8c1; }
     ::placeholder { color: #b0b8c1; }    
+
     @media (max-width: 900px) {
       .row {
         flex-direction: column;
@@ -208,11 +209,35 @@
       .col {
         min-width: 100%;
         margin-bottom: 18px;
+        padding: 12px 6px 8px 6px;
       }
       .container {
         padding: 12px 4px 12px 4px;
+        max-width: 100vw;
+      }
+      table, th, td {
+        font-size: 0.95rem;
+        word-break: break-word;
+        max-width: 100vw;
+      }
+      table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+      }
+      canvas {
+        width: 100% !important;
+        max-width: 100vw !important;
+        height: auto !important;
+        min-width: 0 !important;
+      }
+      #resultArea, #resultsContent, #steelCheckArea {
+        padding: 12px 4px 10px 4px;
+        max-width: 100vw;
+        overflow-x: auto;
       }
     }
+    
   </style>
 </head>
 <body>
@@ -2727,3 +2752,4 @@
   </script>
 </body>
 </html>
+
